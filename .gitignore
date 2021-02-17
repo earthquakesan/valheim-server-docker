@@ -1,0 +1,6 @@
+vhserver/**/*.db*
+vhserver/**/*.fwl*
+vhserver/**/*.txt
+vhserver/**/prefs
+vhserver/.local
+vhserver/.steam
