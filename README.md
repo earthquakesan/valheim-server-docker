@@ -1,6 +1,6 @@
 # Valheim Server Dockerized
 
-Based on 
+Based on https://linuxgsm.com/lgsm/vhserver/
 
 ## How to run
 
