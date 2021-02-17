@@ -24,6 +24,4 @@ RUN wget -O linuxgsm.sh https://linuxgsm.sh \
 RUN ./vhserver auto-install
 ADD --chown=vhserver run.sh /data/run.sh
 
-VOLUME [ "/data" ]
-
 CMD ["./run.sh"]

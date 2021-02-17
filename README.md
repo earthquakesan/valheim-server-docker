@@ -4,11 +4,7 @@ Based on https://linuxgsm.com/lgsm/vhserver/
 
 ## How to run
 
-```
-docker build -t valheim .
-docker run -it --rm -v $(pwd)/worlds:/worlds -v $(pwd)/common.cfg:/data/lgsm/config-lgsm/vhserver/common.cfg -p 2456-2458:2456-2458/udp -p 2456-2458:2456-2458/tcp valheim:latest
-```
-
-## TODO
-
-* Saves got overwritten on first run of the server, need to create a proper volume mounting for /home/vhserver/.config/unity3d/IronGate/Valheim dir
+1. Edit `./common.cfg` and adjust to your liking
+2. Build new Valheim server image by running `make build`
+3. Copy your world files into `./vhserver/.config/unity3d/IronGate/Valheim/worlds/` (if needed)
+4. Run image using `make run` (you can also run it in interactive mode by using `make test`)
